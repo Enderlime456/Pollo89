@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fce6ea; /* Fondo rosa pastel */
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .contenido {
+    position: relative; /* Para que los corazones se posicionen en relación a este contenedor */
+    max-width: 800px; /* Ancho máximo del contenido */
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para hacer legible el texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .texto {
+    text-align: center;
+  }
+  
+  /* Estilo para los corazones en las esquinas */
+  .contenido::before,
+  .contenido::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://previews.dropbox.com/p/thumb/ACKYO79q3T2yQe80IJQNo94RGi1jX5EnQtn3zdQrTjJNvwhCvjRGeXimB4P7WTXaWCPTPjGvVaYwD6Ij8LKCnmiG4vWMu8Jy8zjfUtpGwmaug-QeIPTmWjCJRKY-BzltjvDOwNaaIUuOkYP5bnNrdecZbxtIqFB3RQbWxe0eULW0JTK-rFwBUtTpDCK7TYtRe8A_qXi6s2q94yG-7uAxmAU7V5ndHv0JNSuwJrOO4TFifafNTQbLcthnjD3xw33EUwL6Xb6XWIjGyEEuDC87W2p5Ove8mimpv-tnmqnQLByedfWO_V5Fdd62ZIbGJQerTvc8a2-2XdHk8CrWVtQnDYhf/p.png'); /* Reemplaza con la URL de tu imagen de corazón */
+    background-size: cover;
+  }
+  
+  /* Corazón en la esquina superior izquierda */
+  .contenido::before {
+    top: 0;
+    left: 0;
+  }
+  
+  /* Corazón en la esquina inferior derecha */
+  .contenido::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  .cursiva {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 2em; /* Tamaño de la fuente */
+    color: #000000; /* Color rosa más intenso */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  }
+  
+  
